@@ -8,4 +8,12 @@ pipeline {
             }
         }
     }
+    post{
+        success{
+            echo "success"
+        }
+        always{
+            echo "Always"
+        }
+    }
 }
